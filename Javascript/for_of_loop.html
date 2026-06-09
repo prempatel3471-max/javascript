@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #eef5f7;
+            padding: 40px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 60px;
+            background: rgb(250, 251, 248);
+            padding: 40px;
+            border-radius: 10px;
+        }
+
+        .product-image img {
+            width: 350px;
+        }
+
+        .product-details {
+            max-width: 500px;
+        }
+
+        .product-details h1 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .product-details p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .price {
+            font-size: 24px;
+            color: #000;
+            margin-bottom: 10px;
+        }
+
+        .category {
+            margin-bottom: 20px;
+            color: #777;
+        }
+
+        ul {
+            margin-bottom: 25px;
+            padding-left: 20px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Product Image -->
+        <div class="product-image">
+            <img src="https://m.media-amazon.com/images/I/31Em5uVIfKL._SY300_SX300_QL70_FMwebp_.jpg"
+                alt="iphone 17 pro max">
+        </div>
+
+        <!-- Product Details -->
+        <div class="product-details">
+
+            <h1>IPHONE 17 PRO MAX</h1>
+
+            <p>
+                Apple iPhone 17 Pro 256 GB: 15.93 cm (6.3″) Display with Promotion up to 120Hz, A19 Pro Chip,
+                Breakthrough Battery Life, Pro Fusion Camera System
+                with Center Stage Front Camera; Deep Blue
+            </p>
+            <div class="price">$ 1,408.36</div>
+
+            <div class="category">
+                <strong>Category:</strong> Electronics
+            </div>
+
+            <h3>Key Features:</h3>
+
+            <ul id="apple-list"></ul>
+            <script>
+                const apple = [
+                    "UNIBODY DESIGN. FOR EXCEPTIONAL POWER — Heat-forged aluminium unibody enclosure for the most powerful iPhone ever made",
+
+                    "DURABLE CERAMIC SHIELD. FRONT AND BACK — Ceramic Shield protects the back of iPhone 17 Pro Max, making it 4x more resistant to cracks. And the new Ceramic Shield 2 on the front has 3x better scratch resistance",
+
+                    "Cyber Security",
+
+                    "A19 PRO CHIP. VAPOUR COOLED. LIGHTNING FAST — A19 Pro is the most powerful iPhone chip yet, delivering up to 40% better sustained performance",
+
+                    "THE ULTIMATE PRO CAMERA SYSTEM — With all 48MP rear cameras and 8x optical-quality zoom — the longest zoom ever on an iPhone. It’s the equivalent of 8 pro lenses in your pocket",
+
+                    "BREAKTHROUGH BATTERY LIFE — The unibody design creates massive additional battery capacity, for up to 31 hours of video playback. Charge up to 50% in 20 minutes"
+                ];
+                let data = "";
+
+                for (let pro_17 of apple) {
+                    data += `<li> ${pro_17} </li >`
+                }
+
+                document.getElementById('apple-list').innerHTML = data;
+
+            </script>
+            <h1> OUT OF STOCK </h1>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

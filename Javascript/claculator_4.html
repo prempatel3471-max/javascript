@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            background-color: #769fff;
+        }
+
+        .calculator {
+            background: #deff82;
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        button {
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            margin: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="calculator">
+        <h2>Calculator</h2>
+
+        <input type="number" id="num-1" placeholder="Enter Number 1">
+        <input type="number" id="num-2" placeholder="Enter Number 2">
+
+        <br>
+
+        <button onclick="addition()">+</button>
+        <button onclick="subtraction()">-</button>
+        <button onclick="multiplication()">*</button>
+        <button onclick="division()">/</button>
+
+        <h2 id="ans">Answer:</h2>
+    </div>
+
+    <script>
+        function addition() {
+            let num1 = Number(document.getElementById("num-1").value);
+            let num2 = Number(document.getElementById("num-2").value);
+
+            let ans = num1 + num2;
+
+            document.getElementById("ans").innerHTML =
+                "Answer: " + ans;
+        }
+
+        function subtraction() {
+            let num1 = Number(document.getElementById("num-1").value);
+            let num2 = Number(document.getElementById("num-2").value);
+
+            let ans = num1 - num2;
+
+            document.getElementById("ans").innerHTML =
+                "Answer: " + ans;
+        }
+
+        function multiplication() {
+            let num1 = Number(document.getElementById("num-1").value);
+            let num2 = Number(document.getElementById("num-2").value);
+
+            let ans = num1 * num2;
+
+            document.getElementById("ans").innerHTML =
+                "Answer: " + ans;
+        }
+
+        function division() {
+            let num1 = Number(document.getElementById("num-1").value);
+            let num2 = Number(document.getElementById("num-2").value);
+
+            if (num2 === 0) {
+                document.getElementById("ans").innerHTML =
+                    "Answer: Cannot divide by zero";
+            } else {
+                let ans = num1 / num2;
+
+                document.getElementById("ans").innerHTML =
+                    "Answer: " + ans;
+            }
+        }
+    </script>
+
+</body>
+</html>
