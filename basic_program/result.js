@@ -1,0 +1,10 @@
+let m1 = 80;
+let m2 = 75;
+let m3 = 90;
+let m4 = 70;
+let m5 = 85;
+let total = m1 + m2 + m3 + m4 + m5;
+let per = total / 5;
+console.log("Total = " + total);
+console.log("Percentage = " + per + "%");
+export {};
