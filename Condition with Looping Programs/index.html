@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="quiz-container">
+        <h1>JavaScript Quiz Game</h1>
+
+        <div id="question-box">
+            <h2 id="question">Question appears here</h2>
+
+            <button class="option" onclick="checkAnswer('a')" id="optionA"></button>
+            <button class="option" onclick="checkAnswer('b')" id="optionB"></button>
+            <button class="option" onclick="checkAnswer('c')" id="optionC"></button>
+            <button class="option" onclick="checkAnswer('d')" id="optionD"></button>
+        </div>
+
+        <button id="nextBtn" onclick="nextQuestion()">Next Question</button>
+
+        <p id="score"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

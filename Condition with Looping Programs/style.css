@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightskyblue;
+    text-align: center;
+}
+
+.quiz-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+h1 {
+    color: navy;
+}
+
+.option {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+#nextBtn {
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#score {
+    font-weight: bold;
+    margin-top: 15px;
+    
+}.selected {
+    background-color: lightgreen;
+}
